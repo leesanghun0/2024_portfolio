@@ -1,0 +1,38 @@
+.header{
+    height: 100px;
+    // background-color: lightgray;
+    border-bottom: 1px solid black;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    backdrop-filter:blur(5px);
+
+
+    &-wrapper{
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 20px;
+        
+
+        &-nav{
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;         
+
+            &-list{
+                display: flex;
+                flex-flow: column;
+                padding: 15px;
+                font-size: 20px;
+
+                & span{
+                    color: gray;
+                    font-size: 15px;
+                }
+            }
+
+        }
+    }
+}
