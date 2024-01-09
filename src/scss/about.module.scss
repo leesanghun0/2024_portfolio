@@ -1,0 +1,47 @@
+@import './style.scss';
+
+
+
+.about{
+    width: 100%;
+    height: auto;
+
+    &-wrapper{
+        width: 90%;
+        height: 100%;
+        margin: 0 auto;
+    }
+}
+
+.contents-title{
+    font-size: 120px;
+    @include font-style($color:#fff, $text-shadow:(-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000));
+}
+
+.section-container{
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+
+    &-images{
+        width: 50%;
+        display: flex;
+        justify-content: end;
+
+        img{
+            width: 600px;
+            height: auto;
+            object-fit: contain;
+        }
+    }
+
+    &-desc{
+        width: 50%;
+
+        & div{
+          height: 100px;  
+        //   border: 1px solid black;
+          margin-top: 30px;
+        }
+    }
+}

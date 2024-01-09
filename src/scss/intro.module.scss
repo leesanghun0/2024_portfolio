@@ -1,0 +1,53 @@
+@import './style.scss';
+
+.intro{
+    width: 100%;
+    height: 100vh;
+    
+
+    &-wrapper{
+        width: 90%;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+
+        &-list{
+            width: 100%;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-around;
+
+            &-item{
+                width: 320px;
+                height: 300px;
+                padding: 15px;
+                box-sizing: border-box;
+                display: flex;
+                flex-flow: column;
+
+                &-num{
+                    font-size: 55px;
+                    display: inline-block;
+                    @include font-style($color:#fff, $text-shadow:(-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000));
+
+                    &:hover{
+                        color: #000;
+                    }
+                }
+
+                & strong{
+                    font-size: 20px;
+                }
+
+                & ul{
+                    margin-top: 10px;
+
+                    & li{
+                        color: gray;
+                    }
+                }
+            }
+        }    
+    }
+}

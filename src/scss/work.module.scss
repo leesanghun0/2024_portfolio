@@ -1,0 +1,45 @@
+@import './style.scss';
+
+.contents-title{
+    font-size: 120px;
+    @include font-style($color:#fff, $text-shadow:(-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000));
+}
+
+
+
+.work{
+    width: 100%;
+    height: auto;
+
+    &-wrapper{
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
+    }
+}
+
+.work-gallay-container{
+    width: 90%;
+    height: 100%;
+    background-color: #fff;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap :30px;
+
+    &-item{        
+        overflow: hidden;
+        border: 1px solid gray;
+
+        img{
+            width: 100%;
+            
+
+            &:hover{
+                opacity:  0.5;
+                scale: 1.2;
+                transition: all 0.2s;
+            }
+        }        
+    }
+}
