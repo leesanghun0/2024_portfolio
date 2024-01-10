@@ -5,6 +5,7 @@ import Main from "../components/Main";
 import Intro from "../components/Intro";
 import About from "../components/About";
 import Work from "../components/Work";
+import Experience from "../components/Experience";
 import Footer from "../components/Footer";
 
 
@@ -18,6 +19,7 @@ function Index(){
            <Main />
            <Intro />
            <About />
+           <Experience />
            <Work />
            <Footer />
         </>

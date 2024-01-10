@@ -1,11 +1,17 @@
 .header{
+    width: 100%;
     height: 100px;
-    // background-color: lightgray;
-    border-bottom: 1px solid black;
+    //background-color: lightgray;
+    position: fixed;
+    z-index: 999;
+    border: 1px solid lightgray;
+    backdrop-filter: blur(5px);
     display: flex;
     flex-flow: column;
     justify-content: center;
-    backdrop-filter:blur(5px);
+
+
+    
 
 
     &-wrapper{

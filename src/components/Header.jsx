@@ -5,7 +5,7 @@ function Header(){
     return (<header className={styles["header"]}>
         <div className={styles["header-wrapper"]}>
             <div className={styles["header-wrapper-logo"]}>
-                <h2>Shoon</h2>
+                <h2>Lee Sanghun</h2>
             </div>
             <ul className={styles["header-wrapper-nav"]}>
                <li className={styles["header-wrapper-nav-list"]}>
