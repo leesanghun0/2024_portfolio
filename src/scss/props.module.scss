@@ -1,0 +1,8 @@
+@import './style.scss';
+
+
+//제목 폰트 스타일
+.contents-title{
+    font-size: 120px;
+    @include font-style($color:#fff, $text-shadow:(-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000));
+}
