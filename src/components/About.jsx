@@ -1,11 +1,12 @@
 import React from "react";
 import SectionTitle from "./Sectiontitle";
 import styles from "../scss/about.module.scss";
+import Description from "./Description";
 import main_about from "../assets/images/main_about.webp"
 
 
 function About(){
-    console.log()
+
     return (<section className={styles["about"]}>
         <SectionTitle name="ABOUT" />
         <div className={styles["about-wrapper"]}>
@@ -25,16 +26,19 @@ function About(){
                         </li>
                     </ul>
                     <hr />
-                    <ul>
-                        <li>
-                            <span>2022.06.07 - 2022.09</span>청년반응형 프론트앤드 개발자양성과정 교육 참여
-                        </li>
-                        <li>
-                            <span>2012.03 - 2016.02</span>삼육보건대학
-                        </li>
-                    </ul>
+                    <Description
+                    date="2022.06 - 2022.09"
+                    someProps="대우직업능력개발원"
+                    title="프론트앤드개발자 양성과정 교육 수료"/>
+
+                    <Description
+                    date="2022.06 - 2022.09"
+                    someProps="삼육보건대"
+                    title="사회복지"/>
                 </div>
             </div>
+            {/* <Container
+            images={main_about}/> */}
         </div>
     </section>)
 }

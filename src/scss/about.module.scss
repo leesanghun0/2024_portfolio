@@ -22,6 +22,7 @@
         width: 50%;
         display: flex;
         justify-content: end;
+        order: 1;
 
         img{
             width: 600px;
@@ -32,6 +33,7 @@
 
     &-desc{
         width: 50%;
+        order: 2;
 
         & div{
           height: 100px;  
