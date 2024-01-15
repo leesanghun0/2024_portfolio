@@ -5,7 +5,7 @@
     height: auto;
 
     &-wrapper{
-        width: 90%;
+        width: 80%;
         height: 100%;
         margin: 0 auto;
     }
@@ -13,18 +13,17 @@
 .section-container{
     display: flex;
     flex-flow: row wrap;
+    justify-content: space-between;
     width: 100%;
 
     &-images{
-        width: 50%;
+        width: 45%;
         display: flex;
         justify-content: end;
         order: 2;
 
         img{
-            width: 600px;
-            height: auto;
-            object-fit: contain;
+            width: 100%;
         }
     }
 

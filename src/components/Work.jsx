@@ -8,7 +8,7 @@ import icon_candybirds from "../assets/images/icon_candybirds.webp";
 function Work(){
     return (
     <>
-    <section className={styles["work"]}>
+    <section id="work" className={styles["work"]}>
     <SectionTitle name="WORK" />
         <div className={styles["work-wrapper"]}>
             <div className={styles["work-gallay-container"]}>

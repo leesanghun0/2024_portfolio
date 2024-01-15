@@ -8,7 +8,7 @@ import Description from "./Description";
 
 function Experience(){
     return (
-    <section className={styles["exp"]}>
+    <section id="experience" className={styles["exp"]}>
         <SectionTitle name="EXPERIENCE" />
         <div className={styles["exp-wrapper"]}>
             {/* <Container 

@@ -7,8 +7,8 @@
     height: auto;
 
     &-wrapper{
-        width: 90%;
-        height: 100%;
+        width: 80%;
+        height: auto;
         margin: 0 auto;
     }
 }
@@ -16,20 +16,19 @@
 .section-container{
     display: flex;
     flex-flow: row wrap;
+    justify-content: space-between;
     width: 100%;
 
     &-images{
-        width: 50%;
+        width: 45%;
         display: flex;
         justify-content: end;
         order: 1;
-
+       
         img{
-            width: 600px;
-            height: auto;
-            object-fit: contain;
+            width: 100%;
         }
-    }
+    }   
 
     &-desc{
         width: 50%;
@@ -37,8 +36,36 @@
 
         & div{
           height: 100px;  
-        //   border: 1px solid black;
           margin-top: 30px;
+        }
+    }
+}
+
+.about-desc-list{
+    margin-bottom: 20px;
+
+    &-name{
+        font-size: 22px;
+    }
+
+    &-text{
+        margin: 20px 0;
+        font-size: 16px;
+
+        strong{
+            font-size: 16px;
+        }
+    }
+
+    &-skill{
+        font-size: 15px;
+        
+        span{
+            background-color: #b34831;
+            color: #fff;
+            padding: 2px 8px;
+            margin-right: 5px;
+            font-size: 16px;
         }
     }
 }
