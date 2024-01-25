@@ -1,11 +1,16 @@
-import React from "react";
+import React, { useState, useRef } from "react";
 import SectionTitle from "./Sectiontitle";
 import styles from "../scss/about.module.scss";
 import Description from "./Description";
+import data from "../service/aboutdata";
 import main_about from "../assets/images/main_about.webp"
 
 
 function About(){
+    const [contentsBox] = useState(data);
+    const contentRefs = useRef([]);
+
+
     return (<section id="about" className={styles["about"]}>
         <SectionTitle name="ABOUT" />
         <div className={styles["about-wrapper"]}>
@@ -24,16 +29,10 @@ function About(){
                             <span>skills</span>HTML, CSS, SCSS, media query, React, storybook, git, gulp, photoshop, illustrator
                         </li>
                     </ul>
-                   
-                    <Description
-                    date="2022.06 - 2022.09"
-                    someProps="대우직업능력개발원"
-                    title="프론트앤드개발자 양성과정 교육 수료"/>
-
-                    <Description
-                    date="2022.06 - 2022.09"
-                    someProps="삼육보건대"
-                    title="사회복지"/>
+                    {contentsBox.map((content, index)=>(
+                        <Description key={index} contentsBox={content}
+                        ref={(el) => (contentRefs.current[index] = el)} />
+                    ))}
                 </div>
             </div>
         </div>

@@ -23,16 +23,24 @@
     &-item{        
         overflow: hidden;
         border: 1px solid gray;
-
-        img{
-            width: 100%;
-            
-
-            &:hover{
-                opacity:  0.5;
-                scale: 1.2;
-                transition: all 0.2s;
-            }
-        }        
+        
     }
 }
+
+.container-item-button{
+    width: 100%;
+    display: block;
+    cursor: pointer;
+    
+    img{
+        width: 100%;
+        display: block;
+
+        &:hover{
+            opacity: 1;
+            transition: all 0.2s;
+        }
+    }
+}
+
+
