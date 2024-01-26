@@ -22,10 +22,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 20px;
   
     &-close {
+      font-size: 10px;
       border: 1px solid black;
-      padding: 5px 10px;
       cursor: pointer;
     }
   }

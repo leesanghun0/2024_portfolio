@@ -10,7 +10,9 @@ function Modal({closeModal}) {
           <div className={styles["modal-item-intro-title"]}>
             <h2>카카오뱅크 클론 코딩</h2>
           </div>
-          <div className={styles["modal-item-intro-close"]} onClick={closeModal}>닫기버튼</div>
+          <div className={styles["modal-item-intro-close"]} onClick={closeModal}>
+            <i className="xi-close-min"></i>
+          </div>
         </div>
         <div className={styles["modal-item-papges"]}>
           <div className={styles["modal-item-papges"]}>

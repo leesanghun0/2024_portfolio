@@ -10,11 +10,21 @@ function Work(){
     let [isModal, setOpenModal] = useState(false);
 
     const openModal=()=>{
+        isScrollRock();
         setOpenModal(true);
-        // console.log("모달 상태:", !isModal ? "열렸따." : false);
     }
     const closeModal=()=>{
         setOpenModal(false);
+        isUnScrollRock();
+    }
+
+    const isScrollRock= ()=>{
+        document.body.style.backgroundColor = "gray";
+        document.body.style.overflow = 'hidden';
+    }
+    const isUnScrollRock= ()=>{
+        document.body.style.backgroundColor = "#fff";
+        document.body.style.overflow = 'auto';
     }
 
     return (<section id="work" className={styles["work"]}>
