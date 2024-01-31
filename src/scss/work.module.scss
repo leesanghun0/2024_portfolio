@@ -11,6 +11,12 @@
     }
 }
 
+.contents-title{
+    padding: 50px 0 50px;
+    font-size: 120px;
+    @include font-style($color:#fff, $text-shadow:(-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000));
+}
+
 .work-gallay-container{
     width: 90%;
     height: 100%;
@@ -43,3 +49,16 @@
 }
 
 
+
+@include mobile{
+    .work-gallay-container{
+        grid-template-columns: 1fr 1fr;
+    }  
+}
+
+
+@include tablet{
+    .work-gallay-container{
+        grid-template-columns: 1fr 1fr 1fr;
+    }  
+}

@@ -38,6 +38,7 @@ function Work(){
                     </button>
                     {isModal && <Modal closeModal={closeModal}/>}
                 </div>
+               
             </div>
         </div>
     </section>

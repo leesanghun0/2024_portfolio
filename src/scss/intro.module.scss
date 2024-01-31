@@ -55,3 +55,26 @@
         }    
     }
 }
+
+
+@include mobile{
+    .intro-wrapper-list{
+        width: 100%;
+        flex-flow: row wrap;
+
+        &-item{
+            width: 50%;
+            padding: 0;
+        }
+    }
+
+    .intro-list-item-exp{
+        font-size: 14px;
+        
+        li{
+            letter-spacing: -1px;
+            text-align: left;
+        }
+    }
+
+}
