@@ -3,6 +3,7 @@
 .exp{
     width: 100%;
     height: auto;
+    padding: 200px 0 100px;
 
     &-wrapper{
         width: 80%;
@@ -39,6 +40,29 @@
     }
 }
 
+@include tablet{
+    .exp{
+        width: 100%; 
+
+        &-wrapper{
+            width: 90%;
+        }
+    }
+    .section-container{
+        width: 100%;
+        .section-container-images{
+            display: none;
+        }
+
+        &-desc{
+            width: 100%;
+        }
+    }
+
+    
+}
+
+
 
 @include mobile{
 
@@ -47,9 +71,8 @@
     }
 
     .section-container{
-        flex-flow: column;
-
-        &-images{
+        width: 100%;
+        .section-container-images{
             display: none;
         }
 
@@ -57,4 +80,5 @@
             width: 100%;
         }
     }
+
 }

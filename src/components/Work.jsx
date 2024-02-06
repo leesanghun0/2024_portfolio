@@ -38,6 +38,21 @@ function Work(){
                     </button>
                     {isModal && <Modal closeModal={closeModal}/>}
                 </div>
+                <div className={styles["work-gallay-container-item"]}>
+                    <button className={styles["container-item-button"]} onClick={openModal}>
+                        <img src={icon_interaction_coffee} alt="커피" />
+                    </button>
+                </div>
+                <div className={styles["work-gallay-container-item"]}>
+                    <button className={styles["container-item-button"]} onClick={openModal}>
+                        <img src={icon_interaction_coffee} alt="커피" />
+                    </button>
+                </div>
+                <div className={styles["work-gallay-container-item"]}>
+                    <button className={styles["container-item-button"]} onClick={openModal}>
+                        <img src={icon_interaction_coffee} alt="커피" />
+                    </button>
+                </div>
                
             </div>
         </div>

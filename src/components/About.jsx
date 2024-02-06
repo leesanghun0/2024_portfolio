@@ -1,18 +1,25 @@
-import React, { useState, useRef } from "react";
-import SectionTitle from "./Sectiontitle";
+import React, { useState, useEffect, useRef } from "react";
+// import SectionTitle from "./Sectiontitle";
 import styles from "../scss/about.module.scss";
 import Description from "./Description";
 import data from "../service/aboutdata";
-import main_about from "../assets/images/main_about.webp"
+import main_about from "../assets/images/main_about.webp";
+import handleScroll from "../hook/scrollevent";
 
 
 function About(){
     const [contentsBox] = useState(data);
     const contentRefs = useRef([]);
 
+    useEffect(() => {
+        handleScroll();
+    }, []);
+
+
 
     return (<section id="about" className={styles["about"]}>
-        <SectionTitle name="ABOUT" />
+        {/* <SectionTitle name="ABOUT" /> */}
+        <h2 className={styles["contents-title"]}>ABOUT</h2>
         <div className={styles["about-wrapper"]}>
             <div className={styles["section-container"]}>
                 <div className={styles["section-container-images"]}>

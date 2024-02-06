@@ -4,11 +4,12 @@ import main_visual from "../assets/images/main_visual.webp"
 
 
 function Main(){
+
     return(<section id="main" className={styles["main"]}>
         <div className={styles["main-wrapper"]}>
             <ul className={styles["main-wrapper-title"]}>
-                <li>이상훈</li>
-                <li>포트폴리오</li>
+                <li>LSH'S</li>
+                <li>portfolio</li>
             </ul>
             <div className={styles["main-wrapper-images"]}>
                 <img src={main_visual} alt="메인페이지 표지" />
