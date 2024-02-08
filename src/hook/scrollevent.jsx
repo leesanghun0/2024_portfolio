@@ -1,35 +1,28 @@
+import { useState, useEffect, useRef } from 'react';
 
-function handleScroll(){
-    let titles= document.querySelectorAll('.contents-title');
+const useScrollHandler = () => {
+    const [isAction, setAction] = useState(false);
+    const titleRef = useRef(null);
 
-    // titles.forEach((contentstitle) => {
-    //     let windowScroll = window.scrollY;
-    //     const eventElement = contentstitle.getBoundingClientRect().top;
-    //     const elementVisible = 100;
-       
-    //     if (eventElement < windowScroll-elementVisible) {
-    //         contentstitle.classList.add("active");
-    //     } else {
-    //         contentstitle.classList.remove("active");
+    useEffect(() => {
+        const handleScroll = () => {
+            if (titleRef.current) {
+                const elementTop = titleRef.current.getBoundingClientRect().top;
+                const elementVisibleOffset = 180;
+                setAction(elementTop < window.innerHeight - elementVisibleOffset);
+            }
+        };
 
-    //     }
-    // });
+        window.addEventListener("scroll", handleScroll);
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
 
-    for(let i=0; i<titles.length; i++){
-console.log(titles[i]);
-        // let windowScroll = window.scrollY;
-        // let eventElement = titles[i].getBoundingClientRect().top;
-        // const elementVisible = 100;
+    return { isAction, titleRef };
+};
 
-        // if (eventElement < windowScroll - elementVisible) {
-        //     titles[i].classList.add("active");
-        // } else {
-        //     titles[i].classList.remove("active");
-        // }
-    }
-}
-
-window.addEventListener("scroll",handleScroll);
+export default useScrollHandler;
 
 
-export default handleScroll;
+

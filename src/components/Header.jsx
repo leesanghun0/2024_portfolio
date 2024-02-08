@@ -2,6 +2,8 @@ import React from "react";
 import styles from "../scss/headerLayout.module.scss";
 
 function Header(){
+
+    
     return (<header className={styles["header"]}>
         <div className={styles["header-wrapper"]}>
             <div className={styles["header-wrapper-logo"]}>

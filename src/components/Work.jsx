@@ -3,6 +3,7 @@ import SectionTitle from "./Sectiontitle";
 import styles from "../scss/work.module.scss";
 import icon_interaction_coffee from "../assets/images/icon_interaction_coffee.webp";
 import Modal from "./Modal";
+import useScrollHandler from '../hook/scrollevent';
 
 
 function Work(){
@@ -27,8 +28,11 @@ function Work(){
         document.body.style.overflow = 'auto';
     }
 
+    const { isAction, titleRef } = useScrollHandler();
+
     return (<section id="work" className={styles["work"]}>
-    <SectionTitle name="WORK" />
+    {/* <SectionTitle name="WORK" /> */}
+    <h2 ref={titleRef} className={`${styles["contents-title"]} ${isAction ? styles["active"] : styles[""]}`}>WORK</h2>
         <div className={styles["work-wrapper"]}>
             <div className={styles["work-gallay-container"]}>
             

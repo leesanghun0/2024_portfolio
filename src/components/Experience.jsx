@@ -1,19 +1,23 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import Description from "./Description";
 import data from "../service/data";
 import main_experience from "../assets/images/main_experience.webp";
-import SectionTitle from "./Sectiontitle";
+// import SectionTitle from "./Sectiontitle";
 import styles from "../scss/experience.module.scss";
+import useScrollHandler from '../hook/scrollevent';
 
 
 function Experience(){
     const [contentsBox] = useState(data);
     const contentRefs = useRef([]);
 
+    const { isAction, titleRef } = useScrollHandler();
+
 
     return (
     <section id="experience" className={styles["exp"]}>
-        <SectionTitle name="EXPERIENCE" />
+        {/* <SectionTitle name="EXPERIENCE" /> */}
+        <h2 ref={titleRef} className={`${styles["contents-title"]} ${isAction ? styles["active"] : styles[""]}`}>EXPERIENCE</h2>
         <div className={styles["exp-wrapper"]}>
             <div className={styles["section-container"]}>
                 <div className={styles["section-container-images"]}>
