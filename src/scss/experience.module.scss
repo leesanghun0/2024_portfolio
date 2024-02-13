@@ -1,6 +1,18 @@
 @import './style.scss';
 
 
+.contents-title{
+    margin-left: 200px;
+    padding: 50px 0 50px;
+    font-size: 120px;
+    opacity: 0;
+    @include font-style($color:#fff, $text-shadow:(-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000));
+}
+.active{
+    opacity: 1;
+    margin-left: 0;
+    transition: all 1.5s;
+}
 
 .exp{
     width: 100%;
@@ -24,10 +36,6 @@
         display: flex;
         justify-content: end;
         order: 2;
-
-        img{
-            width: 100%;
-        }
     }
 
     &-desc{
@@ -36,10 +44,18 @@
 
         & div{
           height: 100px;  
-        //   border: 1px solid black;
           margin-top: 30px;
         }
     }
+}
+
+.about-images{
+    width: 100%;
+    transform: scale(0.7, 0.7);
+}
+.show{
+    transform: scale(1,1);
+    transition: all 1s;
 }
 
 @include tablet{
@@ -67,6 +83,9 @@
 
 
 @include mobile{
+    .contents-title{
+        font-size: 60px;
+    }
 
     .exp-wrapper{
         width: 95%;

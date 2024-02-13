@@ -1,6 +1,20 @@
 @import './style.scss';
 
 
+.contents-title{
+    margin-left: 200px;
+    padding: 50px 0 50px;
+    font-size: 120px;
+    opacity: 0;
+    @include font-style($color:#fff, $text-shadow:(-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000));
+}
+.active{
+    opacity: 1;
+    margin-left: 0;
+    transition: all 1.5s;
+}
+
+
 .work{
     width: 100%;
     height: auto;
@@ -11,12 +25,6 @@
         height: auto;
         margin: 0 auto;
     }
-}
-
-.contents-title{
-    padding: 50px 0 50px;
-    font-size: 120px;
-    @include font-style($color:#fff, $text-shadow:(-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000));
 }
 
 .work-gallay-container{
@@ -53,6 +61,10 @@
 
 
 @include mobile{
+
+    .contents-title{
+        font-size: 80px;
+    }
     .work-gallay-container{
         grid-template-columns: 1fr 1fr;
     }  

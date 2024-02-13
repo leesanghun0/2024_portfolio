@@ -5,6 +5,7 @@ import Description from "./Description";
 import data from "../service/aboutdata";
 import main_about from "../assets/images/main_about.webp";
 import useScrollHandler from '../hook/scrollevent';
+import useImageScale from "../hook/imagesScale";
 
 
 function About(){
@@ -12,14 +13,34 @@ function About(){
     const [contentsBox] = useState(data);
     const contentRefs = useRef([]);
     const { isAction, titleRef } = useScrollHandler();
+    const { isScale, imageRefs } = useImageScale();
+
+
+    // const [isScale, setScale]= useState(false);
+    // const imageRefs = useRef(null);
+    
+    // useEffect(()=>{
+    //     const imgScaleHandler=()=>{
+    //         if(imageRefs.current){
+    //             const imgY = imageRefs.current.getBoundingClientRect().top;
+    //             //const elementVisibleOffset = 180;
+    //             setScale(imgY < window.innerHeight)
+    //         }
+    //     }
+
+    //     window.addEventListener('scroll', imgScaleHandler);
+    // },[])
+
+
+
+
 
     return (<section id="about" className={styles["about"]}>
-        {/* <SectionTitle name="ABOUT" /> */}
         <h2 ref={titleRef} className={`${styles["contents-title"]} ${isAction ? styles["active"] : styles[""]}`}>ABOUT</h2>
         <div className={styles["about-wrapper"]}>
             <div className={styles["section-container"]}>
                 <div className={styles["section-container-images"]}>
-                    <img src={main_about} alt="어바웃섹션 이미지" />
+                    <img ref={imageRefs} className={`${styles["about-images"]} ${isScale? styles["show"]: styles[""]}`} src={main_about} alt="어바웃섹션 이미지" />
                 </div>
                 <div className={styles["section-container-desc"]}>
                     <ul className={styles["about-desc-list"]}>

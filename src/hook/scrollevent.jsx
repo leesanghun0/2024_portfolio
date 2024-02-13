@@ -8,8 +8,8 @@ const useScrollHandler = () => {
         const handleScroll = () => {
             if (titleRef.current) {
                 const elementTop = titleRef.current.getBoundingClientRect().top;
-                const elementVisibleOffset = 180;
-                setAction(elementTop < window.innerHeight - elementVisibleOffset);
+                // const elementVisibleOffset = 180;
+                setAction(elementTop < window.innerHeight);
             }
         };
 

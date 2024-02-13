@@ -18,7 +18,7 @@
         position: relative;
 
         &-title{
-            font-size: 240px;
+            font-size: 230px;
             font-weight: bold;
             position: absolute;
             z-index: 1;
@@ -60,16 +60,12 @@
     cursor: pointer;
     z-index: 10 ;
    
-  
-
     p{
       margin-top: 15px;  
-      
     }
 }
 
 .cursor-ani{
-    
     &-outline{
         padding: 10px 10px;
         border: 1px solid black;

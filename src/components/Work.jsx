@@ -20,6 +20,7 @@ function Work(){
     }
 
     const isScrollRock= ()=>{
+        
         document.body.style.backgroundColor = "gray";
         document.body.style.overflow = 'hidden';
     }

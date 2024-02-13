@@ -6,8 +6,6 @@ import main_visual from "../assets/images/main_visual.webp";
 function Main(){
 
     const linksRef= useRef(null);
-    console.log(linksRef)
-    
 
    function linksClickHandler(event){
         event.preventDefault();

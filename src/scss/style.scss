@@ -4,18 +4,6 @@
 @import 'reset';
 @import 'mixin';
 
-.contents-title{
-    margin-left: 200px;
-    padding: 50px 0 50px;
-    font-size: 120px;
-    opacity: 0;
-    @include font-style($color:#fff, $text-shadow:(-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000));
-}
-.active{
-    opacity: 1;
-    margin-left: 0;
-    transition: all 1.5s;
-}
 //@import url('https://fonts.googleapis.com/css2?
 //family=Inter:wght@300;400;500;600;700;800&
 //family=Noto+Sans+KR:wght@400;500&
