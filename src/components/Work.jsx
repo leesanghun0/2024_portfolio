@@ -21,7 +21,7 @@ function Work(){
 
     const isScrollRock= ()=>{
         
-        document.body.style.backgroundColor = "gray";
+        document.body.style.backgroundColor = "rgba(0,0,0,.7)";
         document.body.style.overflow = 'hidden';
     }
     const isUnScrollRock= ()=>{

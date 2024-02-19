@@ -1,9 +1,11 @@
 import React from "react";
 import styles from "../scss/modal.module.scss";
+import coffee_project from "../assets/images/coffee-react-01.jpg";
 
 function Modal({closeModal}) {
 
   return (
+
     <div className={styles["modal"]}>
       <div className={styles["modal-wrapper"]}>
         <div className={styles["modal-item-intro"]}>
@@ -23,6 +25,7 @@ function Modal({closeModal}) {
         <div className={styles["pages-showbox"]}>
           <div className={styles["pages-showbox-inner"]}>
             <h3>개인 리액트프로젝트용 웹퍼블리싱 가이드입니다</h3>
+            <img src={coffee_project} />
           </div>
         </div>
       </div>
