@@ -1,25 +1,28 @@
-import React from "react";
+import React,{useState} from "react";
+import modaldata from "../service/modaldata";
 import styles from "../scss/modal.module.scss";
 import coffee_project from "../assets/images/coffee-react-01.jpg";
 
-function Modal({closeModal}) {
+function Modal({closeModal},props) {
+
+  const [isModal] =useState(modaldata);
+  console.log(modaldata)
 
   return (
-
     <div className={styles["modal"]}>
       <div className={styles["modal-wrapper"]}>
         <div className={styles["modal-item-intro"]}>
           <div className={styles["modal-item-intro-title"]}>
-            <h2>카카오뱅크 클론 코딩</h2>
+            <h2>{props.title}</h2>
           </div>
           <div className={styles["modal-item-intro-close"]} onClick={closeModal}>
             <i className="xi-close-min"></i>
           </div>
         </div>
         <div className={styles["modal-item-papges"]}>
-          <div className={styles["modal-item-papges"]}>
+          <p className={styles["modal-item-papges-summary"]}>
             2024.01 퍼블리싱 기여도 100%
-          </div>
+          </p>
           <div className={styles["modal-item-papges-open"]}>visit website</div>
         </div>
         <div className={styles["pages-showbox"]}>

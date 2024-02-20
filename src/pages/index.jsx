@@ -1,4 +1,3 @@
-import React from "react";
 import style from "../scss/style.scss";
 import Header from "../components/Header";
 import Main from "../components/Main";

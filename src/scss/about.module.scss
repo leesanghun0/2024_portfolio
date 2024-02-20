@@ -119,6 +119,9 @@
 }
 
 @include mobile{
+    .about{
+        padding-top: 100px;
+    }
     .contents-title{
         font-size: 80px;
     }

@@ -18,14 +18,10 @@ function Work(){
         setOpenModal(false);
         isUnScrollRock();
     }
-
     const isScrollRock= ()=>{
-        
-        document.body.style.backgroundColor = "rgba(0,0,0,.7)";
         document.body.style.overflow = 'hidden';
     }
     const isUnScrollRock= ()=>{
-        document.body.style.backgroundColor = "#fff";
         document.body.style.overflow = 'auto';
     }
 
@@ -36,19 +32,14 @@ function Work(){
     <h2 ref={titleRef} className={`${styles["contents-title"]} ${isAction ? styles["active"] : styles[""]}`}>WORK</h2>
         <div className={styles["work-wrapper"]}>
             <div className={styles["work-gallay-container"]}>
-            
-                <div className={styles["work-gallay-container-item"]}>
-                    <button className={styles["container-item-button"]} onClick={openModal}>
-                        <img src={icon_interaction_coffee} alt="커피" />
-                    </button>
-                    {isModal && <Modal closeModal={closeModal}/>}
-                </div>
+
                 <div className={styles["work-gallay-container-item"]}>
                     <button className={styles["container-item-button"]} onClick={openModal}>
                         <img src={icon_interaction_coffee} alt="커피" />
                     </button>
                 </div>
-                <div className={styles["work-gallay-container-item"]}>
+                {isModal && <Modal closeModal={closeModal}/>}
+                {/* <div className={styles["work-gallay-container-item"]}>
                     <button className={styles["container-item-button"]} onClick={openModal}>
                         <img src={icon_interaction_coffee} alt="커피" />
                     </button>
@@ -58,6 +49,11 @@ function Work(){
                         <img src={icon_interaction_coffee} alt="커피" />
                     </button>
                 </div>
+                <div className={styles["work-gallay-container-item"]}>
+                    <button className={styles["container-item-button"]} onClick={openModal}>
+                        <img src={icon_interaction_coffee} alt="커피" />
+                    </button>
+                </div> */}
                
             </div>
         </div>
