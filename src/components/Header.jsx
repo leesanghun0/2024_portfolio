@@ -1,8 +1,19 @@
-import React from "react";
+import React, {useRef} from "react";
 import styles from "../scss/headerLayout.module.scss";
 
 function Header(){
 
+    // const aTagRef = useRef([])
+    // console.log(aTagRef.current)
+    
+
+    // const scrollToLink=()=>{
+    //     if(aTagRef.current){
+    //         const aTagTop = aTagRef.current.offsetTop;
+    //         aTagRef.current.scrollIntoView({ top: aTagTop, behavior: "smooth"})
+    //     }
+    // }
+    
     
     return (<header className={styles["header"]}>
         <div className={styles["header-wrapper"]}>
@@ -11,8 +22,7 @@ function Header(){
             </div>
             {/* pc-NAV */}
             <ul className={styles["header-wrapper-nav"]}>
-               <li className={styles["header-wrapper-nav-list"]}>
-                <a href="#main"><span>01</span>Main</a></li> 
+               <li className={styles["header-wrapper-nav-list"]}><a href="#main"><span>01</span>Main</a></li> 
                <li className={styles["header-wrapper-nav-list"]}><a href="#about"><span>02</span>About</a></li> 
                <li className={styles["header-wrapper-nav-list"]}><a href="#experience"><span>03</span>Experience</a></li> 
                <li className={styles["header-wrapper-nav-list"]}><a href="#work"><span>04</span>Work</a></li> 

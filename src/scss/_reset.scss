@@ -5,7 +5,9 @@
 //family=Oleo+Script&
 //family=Open+Sans:wght@400;700&
 //family=Roboto:wght@400;700;900&display=swap');
-
+html{
+  scroll-behavior: smooth;
+}
 #root{
   font-family:'Inter',sans-serif;
 }
@@ -43,6 +45,7 @@ a{
   position: absolute;
   width: 1px;
 }
+
 
 
 
