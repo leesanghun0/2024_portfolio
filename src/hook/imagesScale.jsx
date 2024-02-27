@@ -8,7 +8,8 @@ const useImageScale=()=>{
         const imgScaleHandler=()=>{
             if(imageRefs.current){
                 const imgY = imageRefs.current.getBoundingClientRect().top;
-                setScale(imgY < window.innerHeight)
+                const elementVisible= 70;
+                setScale(imgY+ elementVisible < window.innerHeight)
             }
         }
 

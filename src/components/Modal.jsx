@@ -18,7 +18,9 @@ function Modal({gallayItemed , closeModal}) {
           <p className={styles["modal-item-papges-summary"]}>
             {gallayItemed.summary}
           </p>
-          <div className={styles["modal-item-papges-open"]}>visit website</div>
+          <div className={styles["modal-item-papges-open"]}>
+            <a target="_blank" href={gallayItemed.pageUrl}>visit website</a>
+            </div>
         </div>
         <div className={styles["pages-showbox"]}>
           <div className={styles["pages-showbox-inner"]}>

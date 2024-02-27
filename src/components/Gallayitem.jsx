@@ -26,7 +26,6 @@ function GallayItem({gallayItems}){
     return (
     <div className={styles["work-gallay-container-item"]}>
         <button className={styles["container-item-button"]} onClick={openModal}>
-            {/* <h2>{props.gallayItems.title}</h2> */}
             <img src={gallayItems.images}  alt={gallayItems.title} />
         </button>
         {isModal && <Modal gallayItemed={gallayItems} closeModal={closeModal}/>}

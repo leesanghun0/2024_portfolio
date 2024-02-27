@@ -1,4 +1,4 @@
-import React, {useEffect, useRef, useState} from "react";
+import React, {useEffect,useState, useRef,} from "react";
 import styles from "../scss/main.module.scss";
 import main_visual from "../assets/images/main_visual.webp";
 
@@ -7,25 +7,19 @@ function Main(){
 
     const linksRef= useRef(null);
 
-    const [isMain,setMain]= useState()
-    const slideTitle =useRef([])
+    const [isMain,setMain]= useState(false);
+    const blackTitle = useRef(null)
+    const whiteTitle = useRef(null)
     
-
     useEffect(()=>{
-        window.onload =pagesLoad;
-
-        function pagesLoad(index){
-            if(slideTitle.current[0]){
-             setTimeout(()=>{
-                console.log(0)
-             },1000)
+        const slidesTitle=()=>{
+            if(blackTitle.current){
+                setMain(true)
             }
-            if(slideTitle.current[1]){
-                setTimeout(()=>{
-                   console.log(1)
-                },2000)
-            }
-         }
+        }
+        
+        window.addEventListener('load',slidesTitle);
+        
     },[])
 
 
@@ -36,7 +30,7 @@ function Main(){
 
         if(linksRef.current){
             const offetTop=linksRef.current.offsetTop;
-            const scrolltarget = linksRef.current.getAttribute("href");
+            //const scrolltarget = linksRef.current.getAttribute("href");
 
             window.scrollTo({
                 top: offetTop,
@@ -48,8 +42,8 @@ function Main(){
     return(<section id="main" className={styles["main"]}>
         <div className={styles["main-wrapper"]}>
             <ul className={styles["main-wrapper-title"]}>
-                <li ref={el=>slideTitle.current[0]=el}>LSH'S</li>
-                <li ref={el=>slideTitle.current[1]=el}>portfolio</li>
+                <li className={`${styles["main-wrapper-title-list"]} ${isMain ? styles["f-show"] : styles[""]}`} ref={blackTitle}>LSH'S</li>
+                <li className={`${styles["main-wrapper-title-list"]} ${isMain ? styles["s-show"] : styles[""]}`} ref={whiteTitle}>portfolio</li>
             </ul>
             <div className={styles["main-wrapper-images"]}>
                 <img src={main_visual} alt="메인페이지 표지" />

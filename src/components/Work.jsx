@@ -1,16 +1,13 @@
-import React, { useState,useRef } from "react";
-import SectionTitle from "./Sectiontitle";
+import React, { useState} from "react";
 import modaldata from "../service/modaldata";
 import styles from "../scss/work.module.scss";
 import GallayItem from "./Gallayitem";
-import Modal from "./Modal";
 import useScrollHandler from '../hook/scrollevent';
 
 
 function Work(){
 
     const [gallayItems]=useState(modaldata);
-    const gallayRef= useRef([])
     const { isAction, titleRef } = useScrollHandler();
 
     return (<section id="work" className={styles["work"]}>
@@ -32,44 +29,3 @@ function Work(){
 }
 
 export default Work;
-
-
-
-
-// let [isModal, setOpenModal] = useState(false);
-
-    // const openModal=()=>{
-    //     isScrollRock();
-    //     setOpenModal(true);
-    // }
-    // const closeModal=()=>{
-    //     setOpenModal(false);
-    //     isUnScrollRock();
-    // }
-    // const isScrollRock= ()=>{
-    //     document.body.style.overflow = 'hidden';
-    // }
-    // const isUnScrollRock= ()=>{
-    //     document.body.style.overflow = 'auto';
-    // }
-{/* <div className={styles["work-gallay-container-item"]}>
-                    <button className={styles["container-item-button"]} onClick={openModal}>
-                        <img src={icon_interaction_coffee} alt="커피" />
-                    </button>
-                </div> */}
-                {/* {isModal && <Modal closeModal={closeModal}/>} */}
-                {/* <div className={styles["work-gallay-container-item"]}>
-                    <button className={styles["container-item-button"]} onClick={openModal}>
-                        <img src={icon_interaction_coffee} alt="커피" />
-                    </button>
-                </div>
-                <div className={styles["work-gallay-container-item"]}>
-                    <button className={styles["container-item-button"]} onClick={openModal}>
-                        <img src={icon_interaction_coffee} alt="커피" />
-                    </button>
-                </div>
-                <div className={styles["work-gallay-container-item"]}>
-                    <button className={styles["container-item-button"]} onClick={openModal}>
-                        <img src={icon_interaction_coffee} alt="커피" />
-                    </button>
-                </div> */}
