@@ -20,7 +20,7 @@ function Main(){
             },500)
         }
         
-        window.addEventListener('load',slidesTitle);
+        slidesTitle();
 
 
 
