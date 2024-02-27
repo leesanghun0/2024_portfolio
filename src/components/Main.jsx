@@ -13,9 +13,12 @@ function Main(){
     
     useEffect(()=>{
         const slidesTitle=()=>{
-            if(blackTitle.current){
-                setMain(true)
-            }
+            
+            setTimeout(()=>{
+                if(blackTitle.current){
+                    setMain(true)
+                }
+            },500)
         }
         
         window.addEventListener('load',slidesTitle);
