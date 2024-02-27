@@ -10,8 +10,7 @@ function Main(){
     const [isMain,setMain]= useState(false);
     const blackTitle = useRef(null)
     const whiteTitle = useRef(null)
-    
-    useEffect(()=>{
+
         const slidesTitle=()=>{
             
             setTimeout(()=>{
@@ -22,8 +21,6 @@ function Main(){
         }
         
         window.addEventListener('load',slidesTitle);
-        
-    },[])
 
 
 
