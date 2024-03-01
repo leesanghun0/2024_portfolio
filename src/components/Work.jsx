@@ -15,7 +15,6 @@ function Work(){
     <h2 ref={titleRef} className={`${styles["contents-title"]} ${isAction ? styles["active"] : styles[""]}`}>WORK</h2>
         <div className={styles["work-wrapper"]}>
             <div className={styles["work-gallay-container"]}>
-                
                 {gallayItems.map((item,index)=>(
                     <GallayItem
                     gallayItemed={gallayItems}

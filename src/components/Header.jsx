@@ -3,18 +3,6 @@ import styles from "../scss/headerLayout.module.scss";
 
 function Header(){
 
-    // const aTagRef = useRef([])
-    // console.log(aTagRef.current)
-    
-
-    // const scrollToLink=()=>{
-    //     if(aTagRef.current){
-    //         const aTagTop = aTagRef.current.offsetTop;
-    //         aTagRef.current.scrollIntoView({ top: aTagTop, behavior: "smooth"})
-    //     }
-    // }
-    
-    
     return (<header className={styles["header"]}>
         <div className={styles["header-wrapper"]}>
             <div className={styles["header-wrapper-logo"]}>

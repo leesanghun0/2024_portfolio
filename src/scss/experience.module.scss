@@ -2,7 +2,7 @@
 
 
 .contents-title{
-    margin-left: 200px;
+    margin-left: 100px;
     padding: 50px 0 50px;
     font-size: 120px;
     opacity: 0;
@@ -68,6 +68,7 @@
     }
     .section-container{
         width: 100%;
+        
         .section-container-images{
             display: none;
         }
@@ -84,7 +85,7 @@
 
 @include mobile{
     .contents-title{
-        font-size: 60px;
+        font-size: 40px;
     }
 
     .exp-wrapper{

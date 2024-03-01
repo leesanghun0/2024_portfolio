@@ -5,7 +5,7 @@
     height: 100px;
     position: fixed;
     z-index: 999;
-    border: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
     backdrop-filter: blur(5px);
     display: flex;
     flex-flow: column;
@@ -64,7 +64,8 @@
 
 @include mobile{
     .header{
-        display: flex;
+        position: flex;
+        width: 100%;
 
         &-wrapper{
 

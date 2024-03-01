@@ -20,5 +20,6 @@ export default [
         describe:"개인 리액트프로젝트용 웹퍼블리싱 가이드입니다",
         images:"/images/icon_interection_kakaobank.png",
         image:"/images/kakaobank_react_02.png"
-    }
+    },
+    
 ]

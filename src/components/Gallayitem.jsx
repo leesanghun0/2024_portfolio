@@ -27,6 +27,9 @@ function GallayItem({gallayItems}){
     <div className={styles["work-gallay-container-item"]}>
         <button className={styles["container-item-button"]} onClick={openModal}>
             <img src={gallayItems.images}  alt={gallayItems.title} />
+            <div className={styles["overlay"]}>
+                <div className={styles["overlay-title"]}>{gallayItems.title}</div>
+            </div>
         </button>
         {isModal && <Modal gallayItemed={gallayItems} closeModal={closeModal}/>}
     </div>

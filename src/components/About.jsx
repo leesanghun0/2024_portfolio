@@ -15,26 +15,6 @@ function About(){
     const { isAction, titleRef } = useScrollHandler();
     const { isScale, imageRefs } = useImageScale();
 
-
-    // const [isScale, setScale]= useState(false);
-    // const imageRefs = useRef(null);
-    
-    // useEffect(()=>{
-    //     const imgScaleHandler=()=>{
-    //         if(imageRefs.current){
-    //             const imgY = imageRefs.current.getBoundingClientRect().top;
-    //             //const elementVisibleOffset = 180;
-    //             setScale(imgY < window.innerHeight)
-    //         }
-    //     }
-
-    //     window.addEventListener('scroll', imgScaleHandler);
-    // },[])
-
-
-
-
-
     return (<section id="about" className={styles["about"]}>
         <h2 ref={titleRef} className={`${styles["contents-title"]} ${isAction ? styles["active"] : styles[""]}`}>ABOUT</h2>
         <div className={styles["about-wrapper"]}>
