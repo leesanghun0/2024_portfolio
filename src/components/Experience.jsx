@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import Description from "./Description";
 import data from "../service/data";
-import main_experience from "../assets/images/main_experience.webp";
+import main_experience from "../assets/images/main_experience.png";
 // import SectionTitle from "./Sectiontitle";
 import styles from "../scss/experience.module.scss";
 import useScrollHandler from '../hook/scrollevent';

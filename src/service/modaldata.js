@@ -12,7 +12,8 @@ export default [
         summary:"2024.01 퍼블리싱 기여도 100%",
         describe:"개인 리액트프로젝트용 웹퍼블리싱 가이드입니다",
         images:"/images/icon_interaction_coffee.jpg",
-        image:"/images/coffee-react-01.jpg"
+        image:"/images/coffee-react-01.jpg",
+        pageUrl:"https://caffee-cafe.web.app/"
     },
     {
         title:"카카오뱅크 클론코딩",

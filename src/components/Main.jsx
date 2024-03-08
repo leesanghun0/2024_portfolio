@@ -1,6 +1,6 @@
 import React, {useEffect,useState, useRef,} from "react";
 import styles from "../scss/main.module.scss";
-import main_visual from "../assets/images/main_visual.webp";
+import main_visual from "../assets/images/main_visual.png";
 
 
 function Main(){

@@ -1,9 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
-// import SectionTitle from "./Sectiontitle";
 import styles from "../scss/about.module.scss";
 import Description from "./Description";
 import data from "../service/aboutdata";
-import main_about from "../assets/images/main_about.webp";
+import main_about from "../assets/images/main_about.png";
 import useScrollHandler from '../hook/scrollevent';
 import useImageScale from "../hook/imagesScale";
 
