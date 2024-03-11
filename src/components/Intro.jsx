@@ -36,6 +36,7 @@ function Intro(){
                         <h2 className={styles["intro-wrapper-list-item-num"]}>04.</h2>
                         <strong>EDUCATION</strong>
                         <ul className={styles["intro-list-item-exp"]}>
+                            <li>-숭실글로벌미래원(컴퓨터공학) 재학 중</li>
                             <li>-대우직업능력개발원<br/><span>(프론트앤드개발자 양성과정 교육 수료)</span></li>
                             <li>-삼육보건대학(사회복지과)</li>
                         </ul>
