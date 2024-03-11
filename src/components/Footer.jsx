@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styles from "../scss/footer.module.scss";
 
 function Footer(){
@@ -9,7 +10,7 @@ function Footer(){
                     <i className="xi-gmail"></i>
                 </li>
                 <li className={styles["footer-wrapper-link-item"]}>
-                    <i className="xi-github"></i>
+                    <Link to="https://github.com/leesanghun0/2024_portfolio"><i className="xi-github"></i></Link>
                 </li>
                 <li className={styles["footer-wrapper-link-item"]}>
                     <i className="xi-kakaotalk"></i>
