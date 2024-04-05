@@ -16,11 +16,12 @@ export default [
         pageUrl:"https://caffee-cafe.web.app/"
     },
     {
-        title:"카카오뱅크 클론코딩",
+        title:"H&M",
         summary:"2024.02 퍼블리싱 기여도 100%",
-        describe:"개인 리액트프로젝트용 웹퍼블리싱 가이드입니다",
-        images:"/images/icon_interection_kakaobank.png",
-        image:"/images/kakaobank_react_02.png"
+        describe:"redux, redux-thunk을 둔 프로젝트 // 현재 수정 중",
+        images:"/images/icon_interaction_HnM.png",
+        image:"/images/HnM_website.png",
+        pageUrl:"https://golden-kitsune-c40f28.netlify.app"
     },
     
 ]
