@@ -18,10 +18,18 @@ export default [
     {
         title:"H&M",
         summary:"2024.02 퍼블리싱 기여도 100%",
-        describe:"redux, redux-thunk을 둔 프로젝트 // 현재 수정 중",
+        describe:"개인 리액트 스터디 프로젝트입니다.",
         images:"/images/icon_interaction_HnM.png",
         image:"/images/HnM_website.png",
         pageUrl:"https://golden-kitsune-c40f28.netlify.app"
+    },
+    {
+        title:"Netflix",
+        summary:"2024.04 퍼블리싱 기여도 100%",
+        describe:"개인 리액트 스터디 프로젝트입니다.",
+        images:"/images/icon_netflix.jpg",
+        image:"/images/neflix_website.png",
+        pageUrl:"https://extraordinary-custard-2d4435.netlify.app"
     },
     
 ]
