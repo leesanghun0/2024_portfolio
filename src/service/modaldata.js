@@ -33,7 +33,7 @@ export default [
     },
     {
         title:"열차타요",
-        summary:"2024.04.14~ 04.20 팀프로젝트//파트:로그인,역상세페이지 등등",
+        summary:"2024.04.14~ 04.20 팀프로젝트//파트:로그인,역상세페이지 깃허브 내용참고",
         describe:"오픈API를 활용한 실시간지하철노선도 프로젝트",
         images:"/images/icon_mainlogo.svg",
         image:"/images/trainpage.png",
