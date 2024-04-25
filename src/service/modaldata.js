@@ -31,5 +31,13 @@ export default [
         image:"/images/neflix_website.png",
         pageUrl:"https://extraordinary-custard-2d4435.netlify.app"
     },
+    {
+        title:"열차타요",
+        summary:"2024.04.14~ 04.20 팀프로젝트//파트:로그인,역상세페이지 등등",
+        describe:"오픈API를 활용한 실시간지하철노선도 프로젝트",
+        images:"/images/icon_mainlogo.svg",
+        image:"/images/trainpage.png",
+        pageUrl:"https://yeol-cha-ta-yo.netlify.app"
+    }
     
 ]
